@@ -1,0 +1,231 @@
+/*RESET*/
+*{
+
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font-size: 100%;
+	font-weight: 300;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+body{
+	background-color: #f5f5f5;
+}
+ul{list-style: none}
+img{max-width: 100%;}
+a{text-decoration: none;}
+/*yeah*/
+.yeah{
+	width: 100%;
+	float: left;
+	padding: 2% 4%;
+	text-align: center;
+}
+
+/*BG COLORS*/
+
+/*HEADER - cabecalho |--------------------------------------------------------------------- */
+.cabecalho{
+	width: 100%;
+	float: left;
+	padding: 3% 4%;
+}
+.logo{
+	width: 56px;
+	float: left;
+	height: 56px;
+	font-size: 0;
+	background: url(../img/logo-mobile.png) center center/56px;
+}
+.btn-menu{
+	width: 56px;
+	color: #fff;
+	height: 56px;
+	float: right;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 56px;
+	background: linear-gradient(to right, #ce2e3c,#da6706);
+}
+
+/*NAV - menu |------------------------------------------------------------------------ */
+.menu{
+	top: 0;
+	left: 0;
+	width: 100%;
+	float: left;
+	height: 100%;
+	display: none;
+	padding: 3% 4%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.9);
+
+}
+.btn-close{
+	width: 56px;
+	height: 56px;
+	color: #fff;
+	float: right;
+	font-size: 3em;
+	cursor: pointer;
+	font-weight: 700;
+	text-align: center;
+}
+.menu ul{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.menu li{
+	padding: 1.5%;
+}
+.menu li a{
+	color: #fff;
+	font-size: 2em;
+	padding: 1.5% 3%;
+}
+
+.menu li a:hover{
+	color: #ce2e3c;
+	border: 1px solid #ce2e3c;
+}
+
+/*DIV - banner |------------------------------------------------------------------------ */
+.banner{
+	width: 100%;
+	float: left;
+	color: #fff;
+	padding: 3% 4%;
+	text-align: center;
+	background: url(../img/bg.jpg) fixed no-repeat;
+}
+.title{
+	width: 100%;
+}
+.title h2{
+	color: #fff;
+	font-size: 2em;
+	font-weight: 700;
+}
+.title h3{
+	color: #fff;
+	font-size: 1.2em;
+}
+.buttons{
+	width: 100%;
+	margin-top: 10px;
+}
+.btn{
+	width: 100%;
+	padding: 15px;
+	cursor: pointer;
+	text-align: left;
+	font-size: 1.5em;
+	border-radius: 5px;
+}
+.cadastrar{
+	color: #130400;
+	background-color: #fff;
+}
+.sobre{
+	color: #fff;
+	margin-top: 5px;
+	background-color: #130400;;
+
+}
+.buttons i{
+	float: right;
+}
+/* MAIN - servicos |------------------------------------------------------------------------ */
+.servicos{
+	text-align: left;
+}
+.servico{
+	width: 100%;
+	float: left;
+	text-align: left;
+	margin-bottom: 3%;
+	border-radius: 7px;
+	background-color: #fff;
+}
+.servicos img{
+	border-radius: 7px 7px 0 0;
+}
+.inner{
+	padding: 6%;
+	text-align: left;
+}
+.inner a{
+	color: #130400;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+.inner h4{
+	color: #130400;
+	margin-top: 2%;
+	font-size: 1.2em;
+}
+.inner p{
+	color: #130400;
+	margin-top: 6%;
+	line-height: 1.5em;
+}
+
+/* SECTION - newsletter |------------------------------------------------------------------------ */
+.newsletter{
+	color: #fff;
+	background-color: #130400;
+}
+.newsletter h2{
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+.newsletter h3{
+	color: #fff;
+}
+.newsletter form{
+	margin-top: 2%;
+}
+.newsletter input{
+	width: 100%;
+	color: #fff;
+	float: left;
+	padding: 5%;
+	border-radius: 7px;
+	background-color: #130400;
+	border: 1px solid rgba(255,255,255,0.5);
+}
+.newsletter button{
+	width: 100%;
+	float: left;
+	padding: 5%;
+	color: #130400;
+	margin-top: 2%;
+	cursor: pointer;
+	border-radius: 7px;
+	background-color: #fff;
+}
+/* FOOTER - rodaper |------------------------------------------------------------------------ */
+.rodape{
+	color: rgba(255,255,255,0.5);
+	background: linear-gradient(to right, #ce2e3c,#da6706);
+}
+.social-media a{
+	font-size: 1.5em;
+	margin-right: 3%;
+	color: rgba(255,255,255,0.5);
+}
+.social-media a:last-child{
+	margin-right: 0;
+}
+.social-media a:hover{
+	color: #fff;
+}
+.copyright{
+	margin-top: 2%;
+	color: rgba(255,255,255,0.5);	
+}
