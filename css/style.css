@@ -129,10 +129,12 @@ a{text-decoration: none;}
 }
 .btn-cadastrar{
 	color: #124;
+	border: 1px solid #124;
 }
 .btn-sobre{
 	color: #fff;
 	margin-top: 1%;
+	border: 1px solid #fff;
 }
 .buttons i{
 	float: right;
