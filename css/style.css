@@ -226,6 +226,7 @@ a{text-decoration: none;}
 	text-align: left;
 	border-radius: 7px;
 	background-color: #124;
+	border: 1px solid #ffffff70;
 }
 .newsletter button:hover{
 	color: #124;
