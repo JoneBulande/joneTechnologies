@@ -18,88 +18,74 @@ body{
 ul{list-style: none}
 img{max-width: 100%;}
 a{text-decoration: none;}
-/*yeah*/
-.yeah{
-	width: 100%;
-	float: left;
-	padding: 3% 4%;
-	text-align: center;
-}
-.bg-gradient{
-	background-color: #124;
-}
-.bg-black{
-	background-color: #124;
-}
-.bg-white{
-	background-color: #fff;
-}
-.borderR{
-	border-radius: 7px;
-}
-.hoverX{
 
-}
 /*------------------------------------------------------------------------------- */
 /*-----------------------------|  HEADER - CABECALHO |-------------------------------------------- */
 /*------------------------------------------------------------------------------- */
 .cabecalho{
+	width: 100%;
+	display: flex;
+	padding: 3% 4%;
+	align-items: center;
+	justify-content: space-between;
 }
 .logo{
 	width: 56px;
-	float: left;
 	height: 56px;
 	font-size: 0;
-	background: url(../img/logo-mobile.png) center center/56px no-repeat;
+	background: url(../img/logo-mobile.png) center center/56px;
 }
 .btn-menu{
 	width: 56px;
 	color: #fff;
 	height: 56px;
-	float: right;
 	cursor: pointer;
-	text-align: center;
-	border-radius: 56px;
-
+	border-radius: 7px;
+	background-color: #124;
 }
+
 /*------------------------------------------------------------------------------- */
 /*-----------------------------| NAV - MENU  |-------------------------------------------- */
 /*------------------------------------------------------------------------------- */
 .menu{
 	top: 0;
 	left: 0;
-	float: left;
+	display: ;
 	width: 100%;
 	height: 100%;
 	display: none;
+	padding: 3% 4%;
 	position: fixed;
-	background-color: rgba(0,0,0,0.9);
+	text-align: center;
+	background-color: rgba(11,22,44,0.91);
 }
 .btn-close{
+	width: 56px;
 	color: #fff;
+	height: 56px;
 	float: right;
-	font-size: 3em;
+	opacity: 0.5;
 	cursor: pointer;
-	font-weight: 700;
-	margin-right: 5%;
+	font-size: 2.5em;
+	text-align: center;
 }
-
+.btn-close:hover{
+	opacity: 1;
+}
 .menu ul{
 	width: 100%;
 	float: left;
 	text-align: center;
 }
 .menu li{
-
 	padding: 1.5%;
 }
-.menu ul a{
+.menu li a{
 	color: #fff;
-	font-size: 2em;
+	font-size: 2em;	
 	padding: 1.5% 3%;
 }
-.menu ul a:hover{
-	color: #fff;
+.menu li a:hover{
 	border-radius: 5px;
 	border: 1px solid #fff;
 	background-color: #124;
@@ -109,139 +95,162 @@ a{text-decoration: none;}
 /*-----------------------------|  DIV - BANNER  |-------------------------------------------- */
 /*------------------------------------------------------------------------------- */
 .banner{
-	background: url(../img/bg.png) fixed no-repeat;
+	width: 100%;
+	display: flex;
+	padding: 3% 4%;
+	text-align: center;
+	flex-direction: column;
+	background: url(../img/bg.png) fixed;
 }
 .title{
-	width: 100%;
+	flex: 100;
+	color: #fff;
 }
 .title h2{
-	color: #fff;
-	font-size: 2.5em;
+	font-size: 2em;
 	font-weight: 700;
 }
 .title h3{
-	color: #fff;
 	font-size: 1.5em;
 }
 .buttons{
-	width: 100%;
-	margin-top: 2%;
+	flex: 100;
+	margin-top: 1%;
 }
 .btn{
 	width: 100%;
 	padding: 5%;
 	cursor: pointer;
-	text-align: left;
 	font-size: 1.5em;
+	text-align: left;
+	border-radius: 7px;
 }
 .btn-cadastrar{
 	color: #124;
+	background-color: #fff;
 	border: 1px solid #124;
+
 }
 .btn-sobre{
-	color: #fff;
-	margin-top: 1%;
-	border: 1px solid #fff;
+	margin-top: 2%;
+	color: #ffffffba;
+	background-color: #124;
+	border: 1px solid #ffffff70;
+
 }
 .buttons i{
 	float: right;
 }
+.newsletter i{
+	float: right;
+}
+
 /*------------------------------------------------------------------------------- */
 /*-----------------------------| MAIN - SERVICOS |-------------------------------------------- */
 /*------------------------------------------------------------------------------- */
 .servicos{
+	width: 100%;
+	display: flex;
+	padding: 3% 4%;
+	flex-direction: column;
+
 }
 .servico{
 	width: 100%;
-	text-align: left;
-	margin-bottom: 3%;
+	margin: 5px;
+	border-radius: 7px;
+	background-color: #fff;
 }
 .servico img{
-	width: 100%;
 	border-radius: 7px 7px 0 0;
 }
 .inner{
-	padding: 7%;
+	padding: 6%;
+	text-align: center;
+
 }
 .inner a{
-	color: #112244;
+	color: #124;
 	font-size: 1.5em;
 	font-weight: 700;
 
 }
 .inner h4{
-	color: #124;
 	margin-top: 2%;
-	font-size: 1.2em;
 
 }
 .inner p{
 	margin-top: 6%;
-	color: #124;
 	line-height: 1.5em;
-
 }
+
 
 /*------------------------------------------------------------------------------- */
 /*-----------------------------| SECTION -NEWSLETTER |-------------------------------------------- */
 /*------------------------------------------------------------------------------- */
 .newsletter{
-	color: #fff;
-	background: url(../img/bg.png) fixed no-repeat;
+	width: 100%;
+	display: flex;
+	padding: 3% 4%;
+	text-align: center;
+	flex-direction: column;	
+	background: url(../img/bg.png) fixed;
+
 }
 .newsletter h2{
-	cursor: #fff;
-	font-weight: 700;
-	font-size: 1.5em;
-}
 
+ }
 .newsletter h3{
-	cursor: #fff;
-}
+	font-size: 1.2em;
+ }
 .newsletter form{
+	flex: 100;
 	margin-top: 2%;
 }
-form input{
+.newsletter input{
 	width: 100%;
-	float: left;
 	padding: 5%;
-	color: #fff;
+	font-size: 1.5em;
+	border-radius: 7px;
+	border: 1px solid #ffffff70;
 	background-color: transparent;
-	border: 1px solid rgba(255,255,255,0.8);
+
 }
-form button{
+.newsletter button{
 	width: 100%;
-	float: left;
+	color: #fff;
 	padding: 5%;
 	margin-top: 2%;
 	cursor: pointer;
-	border: 1px solid #124;
-}
-form button:hover{
-	color: #fff;
-	border: 1px solid #fff;
+	font-size: 1.5em;
+	text-align: left;
+	border-radius: 7px;
 	background-color: #124;
+}
+.newsletter button:hover{
+	color: #124;
+	background-color: #ffff;
 }
 /*------------------------------------------------------------------------------- */
 /*-----------------------------| FOOTER - RODAPÉ |-------------------------------------------- */
 /*------------------------------------------------------------------------------- */
 .rodape{
-	
+	color: #fff;
+	width: 100%;
+	display: flex;
+	padding: 3% 4%;
+	text-align: center;
+	flex-direction: column;
+	background-color: #124;
 }
-.social-media a{
-	margin-right: 3%;
-	font-size: 1.5em;
-	color: rgba(255,255,255,0.7);
+.rodape a{
+	color: #ffffff8f;
 }
-.social-media a:last-child{
-	margin-right: 0;
-}
-.social-media a:hover{
+.rodape a:hover{
 	color: #fff;
 }
 .rodape p{
-	margin-top: 2%;
-	color: rgba(255,255,255,0.7);
+	margin-top: 10px;
 }
 
 
@@ -249,9 +258,11 @@ form button:hover{
 /*--------------------------|  MEDIA TYPES - RESPONSIVIDADE  |------------------------------- */
 /*------------------------------------------------------------------------------- */
 /* SMAL DEVICES - SMARTPHONES */
+
 @media screen and (min-width: 480px) {
-	.logo {width: 214px; background: url(../img/logo.png) center center/214px no-repeat;}
-	.btn {font-size: 2em;
+	.logo{
+		width: 214px;
+		background: url(../img/logo.png) center center/214px;
 	}
 	
 }
@@ -260,102 +271,93 @@ form button:hover{
 /* --------------------------------- | SMALL DEIVES - TABLETS  | -------------------*/
 /*------------------------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
-	.servico{
-		width: 48%;
-		float: left;
-		margin-right: 2%;
+	.buttons{
+		display: flex;
+		flex-direction: row;
 	}
-	.servico:nth-child(2){
-		margin-right: 0;
+	.btn{
+		padding: 3%;
+		margin: 0 2%;
+	}
+	.btn-sobre{
+		margin-top: 0;
 	}
 	.newsletter h2{
-		font-size: 2em;
+		font-size: 2.5em;
 	}
 	.newsletter h3{
 		font-size: 1.5em;
 	}
-	.newsletter input{
-		width: 70%;
-		float: left;
-		padding: 2%;
-		margin-right: 1%;
-	}
-	.newsletter button{
-		width: 29%;
-		padding: 2%;
-		float: right;
-		margin-top: 0;
+	.rodape a{
+		font-size: 1.5em;
 	}
 }
 /*------------------------------------------------------------------------------- */
 /* --------------------------------- | SMALL DEIVES - TABLETS  | -------------------*/
 /*------------------------------------------------------------------------------- */
 @media screen and (min-width: 960px) {
-	.title{
-		width: 70%;
-		float: left;
-		text-align: left;
-	}
-	.title h2{
-		font-size: 3em;
-
-	}
-	.title h3{
-		font-size: 2em;
-
-	}
-	.buttons{
-		width: 30%;
-		float: right;
-		margin-top: 0;
+	.servicos{
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
 	}
 	.servico{
-		width: 32%;
+		width: 48%;
 	}
-	.servico:nth-child(2){
-		margin-right: 2%;
-	}
-	.servico:nth-child(3){
-		margin-right: 0;
+	.newsletter form{
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	.newsletter input{
-		width: 60%;
-		float: none;
+		width: 50%;
+		padding: 2%;		
+		margin-right: 1%;
 	}
 	.newsletter button{
 		width: 20%;
-		float: none;
+		padding: 2%;
+		margin-top: 0;
 	}
+
 }
 /*------------------------------------------------------------------------------- */
 /* --------------------------------- | LARGE DEIVES - WIDE SCREEN  | -------------------*/
 /*------------------------------------------------------------------------------- */
 @media screen and (min-width: 960px) {
-	.btn-menu{
-		display: none;
+	.banner{
+		align-items: center;
+		flex-direction: row;
 	}
-	.btn-close{
-		display: none;
+	.banner .title{
+		flex: 70;
+		text-align: left;
 	}
-	.menu{
-		width: auto;
-		float: right;
-		height: 56px;
-		position: static;
-		line-height: 56px;
-		display: block !important;
-		background-color: #f5f5f5;
+	.banner .title h2{
+		font-size: 2.5em;
 	}
-	.menu li{
-		padding: 0;
-		float: left;
+	.banner .title h3{
+		font-size: 2em;
 	}
-	.menu li a{
-		padding: 15px;
-		color: #124;
-		font-size: 1em;
+	.banner .buttons{
+		flex: 30;
+		margin-top: 0;
+		flex-direction: column;
 	}
-	.menu li a:hover{
-		border: none;
+	.banner .btn{
+		padding: 5%;
 	}
+	.btn-sobre{
+		margin-top: 2%;
+	}
+	.servico{
+		width: 32%;
+	}
+	.rodape{
+		padding: 4%;
+	}
+	.rodape p{
+		margin-top: 2%;
+	}
+
 }
